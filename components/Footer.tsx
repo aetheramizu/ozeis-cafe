@@ -15,6 +15,7 @@ export default function Footer() {
                 src="/logoozeis.png"
                 alt="Ozeis Cafe Logo"
                 fill
+                sizes="48px"
                 className="object-contain p-0.5"
               />
             </div>
@@ -35,6 +36,7 @@ export default function Footer() {
               href="https://instagram.com/ozeis.cafe"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Instagram Ozeis Cafe"
               className="p-2.5 rounded-full bg-brand-charcoal hover:bg-brand-orange text-brand-muted hover:text-white transition-all border border-white/5"
             >
               <Camera className="w-4 h-4" />
@@ -43,12 +45,14 @@ export default function Footer() {
               href="https://wa.me/6281234567890"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="WhatsApp Ozeis Cafe"
               className="p-2.5 rounded-full bg-brand-charcoal hover:bg-brand-orange text-brand-muted hover:text-white transition-all border border-white/5"
             >
               <Phone className="w-4 h-4" />
             </a>
             <a
               href="mailto:contact@ozeiscafe.com"
+              aria-label="Email Ozeis Cafe"
               className="p-2.5 rounded-full bg-brand-charcoal hover:bg-brand-orange text-brand-muted hover:text-white transition-all border border-white/5"
             >
               <Mail className="w-4 h-4" />

@@ -12,40 +12,40 @@ interface Review {
   textColor: string;
 }
 
-export default function Reviews() {
-  const reviewsList: Review[] = [
-    {
-      id: 1,
-      stars: 5,
-      text: `"Sangat merekomendasikan tempat ini! Atmosfernya luar biasa nyaman buat nugas berjam-jam. Wi-Fi kencang, banyak colokan di setiap sisi meja. Kopi Gula Aren andalan mereka benar-benar nagih."`,
-      name: "Andi Nugraha",
-      role: "Mahasiswa Universitas Hasanuddin",
-      initials: "AN",
-      bgColor: "bg-brand-orange/20",
-      textColor: "text-brand-orange",
-    },
-    {
-      id: 2,
-      stars: 5,
-      text: `"Staf kafe sangat ramah dan murah senyum. Begitu masuk langsung berasa vibes yang cozy dan profesional. Menu minumannya lengkap dan harga bersahabat untuk kantong mahasiswa."`,
-      name: "Siti Pratiwi",
-      role: "Karyawan Swasta, Gowa",
-      initials: "SP",
-      bgColor: "bg-brand-beige/20",
-      textColor: "text-brand-beige",
-    },
-    {
-      id: 3,
-      stars: 5,
-      text: `"Wajib coba Ozeis Signature! Krim atasnya benar-benar gurih dan nge-blend sempurna sama kopinya. Cocok buat kerja karena suasananya tenang dan musik latar tidak bising."`,
-      name: "Rian Darmawan",
-      role: "Remote UI/UX Designer",
-      initials: "RD",
-      bgColor: "bg-brand-orange/20",
-      textColor: "text-brand-orange",
-    },
-  ];
+const reviewsList: Review[] = [
+  {
+    id: 1,
+    stars: 5,
+    text: `"Sangat merekomendasikan tempat ini! Atmosfernya luar biasa nyaman buat nugas berjam-jam. Wi-Fi kencang, banyak colokan di setiap sisi meja. Kopi Gula Aren andalan mereka benar-benar nagih."`,
+    name: "Andi Nugraha",
+    role: "Mahasiswa Universitas Hasanuddin",
+    initials: "AN",
+    bgColor: "bg-brand-orange/20",
+    textColor: "text-brand-orange",
+  },
+  {
+    id: 2,
+    stars: 5,
+    text: `"Staf kafe sangat ramah dan murah senyum. Begitu masuk langsung berasa vibes yang cozy dan profesional. Menu minumannya lengkap dan harga bersahabat untuk kantong mahasiswa."`,
+    name: "Siti Pratiwi",
+    role: "Karyawan Swasta, Gowa",
+    initials: "SP",
+    bgColor: "bg-brand-beige/20",
+    textColor: "text-brand-beige",
+  },
+  {
+    id: 3,
+    stars: 5,
+    text: `"Wajib coba Ozeis Signature! Krim atasnya benar-benar gurih dan nge-blend sempurna sama kopinya. Cocok buat kerja karena suasananya tenang dan musik latar tidak bising."`,
+    name: "Rian Darmawan",
+    role: "Remote UI/UX Designer",
+    initials: "RD",
+    bgColor: "bg-brand-orange/20",
+    textColor: "text-brand-orange",
+  },
+];
 
+export default function Reviews() {
   return (
     <section id="review" className="py-24 bg-brand-warm-dark relative overflow-hidden">
       <div className="absolute bottom-[20%] left-[-10%] w-[40vw] h-[40vw] bg-brand-orange/5 rounded-full blur-[120px] pointer-events-none"></div>

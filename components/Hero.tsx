@@ -65,6 +65,7 @@ export default function Hero() {
                 alt="Beautiful Coffee Craft"
                 fill
                 priority
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover scale-105 hover:scale-110 transition-transform duration-700"
               />
             </div>

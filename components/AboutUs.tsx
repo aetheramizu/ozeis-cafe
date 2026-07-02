@@ -18,6 +18,7 @@ export default function AboutUs() {
                   src="/images/about-1.jpg"
                   alt="Cafe Seating Interior"
                   fill
+                  sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover"
                 />
               </div>
@@ -26,6 +27,7 @@ export default function AboutUs() {
                   src="/images/about-2.jpg"
                   alt="Pouring Coffee Craft"
                   fill
+                  sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -41,6 +43,7 @@ export default function AboutUs() {
                   src="/images/about-3.jpg"
                   alt="Students studying at Cafe"
                   fill
+                  sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover"
                 />
               </div>
@@ -49,6 +52,7 @@ export default function AboutUs() {
                   src="/images/about-4.jpg"
                   alt="Barista working"
                   fill
+                  sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover"
                 />
               </div>

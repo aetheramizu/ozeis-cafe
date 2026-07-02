@@ -13,54 +13,54 @@ interface MenuItem {
   isBestSeller?: boolean;
 }
 
+const menuItems: MenuItem[] = [
+  {
+    id: 1,
+    name: "Kopi Aren",
+    description: "Paduan espresso premium khas Ozeis dengan kelembutan susu murni dan kemanisan otentik Gula Aren murni.",
+    price: "Rp 25.000",
+    image: "/images/menu-1.jpg",
+    isBestSeller: true,
+  },
+  {
+    id: 2,
+    name: "Caramel Ribbon",
+    description: "Kemewahan saus karamel premium yang gurih-manis berpadu dengan espresso murni dan microfoam susu segar.",
+    price: "Rp 30.000",
+    image: "/images/menu-2.jpg",
+  },
+  {
+    id: 3,
+    name: "Ozeis Signature",
+    description: "Mahakarya rahasia racikan barista Ozeis. Kopi espresso blend khusus dilapisi krim gurih manis yang lembut.",
+    price: "Rp 28.000",
+    image: "/images/menu-3.jpg",
+  },
+  {
+    id: 4,
+    name: "Vanilla Bliss",
+    description: "Sensasi lembut aroma vanilla murni berpadu mesra dengan espresso berkualitas tinggi yang menenangkan jiwa.",
+    price: "Rp 28.000",
+    image: "/images/menu-4.jpg",
+  },
+  {
+    id: 5,
+    name: "Premium Chocolate",
+    description: "Cokelat premium pekat yang padat, manis seimbang, dan creamy. Pilihan mutlak bagi pecinta non-kopi.",
+    price: "Rp 23.000",
+    image: "/images/menu-5.jpg",
+  },
+  {
+    id: 6,
+    name: "Cappuccino",
+    description: "Sajian klasik legendaris. Keseimbangan sempurna antara kepekatan espresso segar dengan microfoam tebal lembut.",
+    price: "Rp 23.000",
+    image: "/images/menu-6.jpg",
+  },
+];
+
 export default function StarMenu() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const menuItems: MenuItem[] = [
-    {
-      id: 1,
-      name: "Kopi Aren",
-      description: "Paduan espresso premium khas Ozeis dengan kelembutan susu murni dan kemanisan otentik Gula Aren murni.",
-      price: "Rp 25.000",
-      image: "/images/menu-1.jpg",
-      isBestSeller: true,
-    },
-    {
-      id: 2,
-      name: "Caramel Ribbon",
-      description: "Kemewahan saus karamel premium yang gurih-manis berpadu dengan espresso murni dan microfoam susu segar.",
-      price: "Rp 30.000",
-      image: "/images/menu-2.jpg",
-    },
-    {
-      id: 3,
-      name: "Ozeis Signature",
-      description: "Mahakarya rahasia racikan barista Ozeis. Kopi espresso blend khusus dilapisi krim gurih manis yang lembut.",
-      price: "Rp 28.000",
-      image: "/images/menu-3.jpg",
-    },
-    {
-      id: 4,
-      name: "Vanilla Bliss",
-      description: "Sensasi lembut aroma vanilla murni berpadu mesra dengan espresso berkualitas tinggi yang menenangkan jiwa.",
-      price: "Rp 28.000",
-      image: "/images/menu-4.jpg",
-    },
-    {
-      id: 5,
-      name: "Premium Chocolate",
-      description: "Cokelat premium pekat yang padat, manis seimbang, dan creamy. Pilihan mutlak bagi pecinta non-kopi.",
-      price: "Rp 23.000",
-      image: "/images/menu-5.jpg",
-    },
-    {
-      id: 6,
-      name: "Cappuccino",
-      description: "Sajian klasik legendaris. Keseimbangan sempurna antara kepekatan espresso segar dengan microfoam tebal lembut.",
-      price: "Rp 23.000",
-      image: "/images/menu-6.jpg",
-    },
-  ];
 
   return (
     <section id="menu" className="py-24 bg-brand-warm-dark relative">
@@ -107,6 +107,7 @@ export default function StarMenu() {
                     src={item.image}
                     alt={item.name}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -126,6 +127,7 @@ export default function StarMenu() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`Pesan ${item.name} via WhatsApp`}
                   className="p-2.5 rounded-full bg-brand-warm-dark border border-white/10 hover:border-brand-orange text-brand-warm-light hover:text-brand-orange hover:scale-110 transition-all"
                   title="Pesan Sekarang"
                 >
@@ -162,6 +164,7 @@ export default function StarMenu() {
                   src="/images/menu-modal.jpg"
                   alt="Daftar Menu Asli Ozeis Cafe"
                   fill
+                  sizes="(max-width: 1200px) 100vw, 1200px"
                   className="rounded-xl border border-white/10 shadow-lg object-contain"
                 />
               </div>

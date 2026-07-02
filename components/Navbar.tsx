@@ -4,6 +4,15 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
+const navLinks = [
+  { name: "Home", href: "#home" },
+  { name: "Tentang Kami", href: "#tentang" },
+  { name: "Menu", href: "#menu" },
+  { name: "Rewards", href: "#rewards" },
+  { name: "Review", href: "#review" },
+  { name: "Lokasi", href: "#lokasi" },
+];
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -21,15 +30,6 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "Tentang Kami", href: "#tentang" },
-    { name: "Menu", href: "#menu" },
-    { name: "Rewards", href: "#rewards" },
-    { name: "Review", href: "#review" },
-    { name: "Lokasi", href: "#lokasi" },
-  ];
-
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -46,6 +46,7 @@ export default function Navbar() {
               src="/logoozeis.png"
               alt="Ozeis Cafe Logo"
               fill
+              sizes="40px"
               className="object-contain p-0.5"
             />
           </div>
