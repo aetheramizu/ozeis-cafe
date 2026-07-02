@@ -3,11 +3,11 @@
 @theme {
   --color-brand-charcoal: #0D0B0A;
   --color-brand-warm-dark: #161311;
-  --color-brand-orange: #C1451F;
+  --color-brand-orange: #D4552A;
   --color-brand-orange-hover: #A33312;
   --color-brand-warm-light: #FDFBF7;
   --color-brand-beige: #EADBC8;
-  --color-brand-muted: #9E8E81;
+  --color-brand-muted: #B5A596;
   
   --font-serif: var(--font-cormorant-garamond), serif;
   --font-sans: var(--font-plus-jakarta-sans), sans-serif;

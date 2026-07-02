@@ -84,7 +84,7 @@ export default function CoffeeRewards() {
                   <div className="flex justify-between items-start">
                     <div>
                       <p className="text-[10px] uppercase tracking-widest text-brand-muted">Digital Loyalty Program</p>
-                      <h4 className="text-base font-bold text-brand-warm-light mt-0.5">Coffee Reward Card</h4>
+                      <h3 className="text-base font-bold text-brand-warm-light mt-0.5">Coffee Reward Card</h3>
                     </div>
                     <div className="p-2 bg-brand-orange/10 border border-brand-orange/20 rounded-xl text-brand-orange">
                       <Award className="w-5 h-5" />

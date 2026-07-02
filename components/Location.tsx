@@ -65,6 +65,7 @@ export default function Location() {
           <div className="lg:col-span-7 bg-brand-warm-dark border border-white/5 rounded-[2.5rem] p-4 shadow-2xl relative h-[450px] overflow-hidden">
             {/* Dark Styled Map Iframe Embed */}
             <iframe
+              title="Google Maps Location for OZEIS Cafe"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.5701830604245!2d119.467475!3d-5.188718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee2a8435d8e7b%3A0xc3456b7dc9768ae5!2sCitraLand%20Celebes%20Gowa!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
               width="100%"
               height="100%"
